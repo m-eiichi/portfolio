@@ -1,0 +1,38 @@
+@import "../../../../../assets/styles/mq.css";
+
+.menu {
+  position: fixed;
+  top: var(--height-header);
+  right: 0;
+  z-index: 1;
+  width: auto;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  background-color: black;
+  transition: var(--transition-delay-default);
+  transform: translateX(100%);
+
+  &.isOpen {
+    overflow: visible;
+    transform: translateX(0);
+  }
+}
+
+.menu_list_item {
+  width: 12em;
+  padding: 0 0 0 2em;
+  line-height: 3;
+  color: var(--color-primary-contrast-text);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--grey-800);
+  }
+}
+
+@media (--viewport-over-desktop) {
+  .menu {
+    display: none;
+  }
+}

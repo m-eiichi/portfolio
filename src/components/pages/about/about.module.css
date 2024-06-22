@@ -1,0 +1,35 @@
+@import "../../../assets/styles/mq.css";
+
+.desc {
+  & a {
+    text-decoration: underline;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (--viewport-over-desktop) {
+  .section {
+    position: relative;
+    display: flex;
+    gap: var(--size-f-06);
+    align-items: flex-end;
+  }
+
+  .headline__wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .image {
+    width: 50%;
+  }
+
+  .desc {
+    width: 50%;
+    margin-bottom: var(--size-f-03);
+  }
+}

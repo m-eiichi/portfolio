@@ -1,0 +1,17 @@
+@import "../../../assets/styles/mq.css";
+
+.wrapper {
+  width: min(100%, 1280px);
+  margin: var(--base-size-80px) auto 0;
+}
+
+.inner {
+  padding: var(--size-f-05) var(--size-f-02);
+  margin: 0 auto;
+}
+
+/* @media (--viewport-over-desktop) {
+  .inner {
+    padding: var(--size-f-05);
+  }
+} */

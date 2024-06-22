@@ -1,0 +1,17 @@
+.list {
+  display: flex;
+  gap: 1em;
+
+  label {
+    display: block;
+    width: 5em;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 4px;
+  }
+
+  input:checked + label {
+    color: var(--white);
+    background-color: var(--grey-900);
+  }
+}

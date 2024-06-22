@@ -1,0 +1,42 @@
+@import "../../../assets/styles/mq.css";
+
+/* img {
+  border-radius: 16px;
+} */
+
+.main_content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-f-03);
+}
+
+.article_container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-f-06);
+
+  & a {
+    text-decoration: underline;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media (--viewport-over-desktop) {
+  .article_container {
+    flex-flow: row wrap;
+    gap: var(--size-f-05);
+
+    & article {
+      &:first-child {
+        width: 100%;
+      }
+
+      &:not(:first-child) {
+        width: calc(50% - calc(var(--size-f-05) / 2));
+      }
+    }
+  }
+}
