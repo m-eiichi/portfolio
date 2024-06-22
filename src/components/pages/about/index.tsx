@@ -1,4 +1,5 @@
 import { type ReactElement } from "react";
+import { Link } from "react-router-dom";
 import { Headline } from "@/components/ui_elements/headline";
 import Styles from "./about.module.css";
 
@@ -14,11 +15,11 @@ export const About = (): ReactElement => {
       <p className={Styles.desc}>
         このサイトは
         <br />
-        <a href="/profile">Profile</a>で自己紹介を
+        <Link to="/profile">Profile</Link>で自己紹介を
         <br />
-        <a href="/works">Works</a>で制作物を
+        <Link to="/works">Works</Link>で制作物を
         <br />
-        <a href="/skills">Skills</a>で現在扱える技術を
+        <Link to="/skills">Skills</Link>で現在扱える技術を
         <br />
         まとめたポートフォリオサイトです。
       </p>
