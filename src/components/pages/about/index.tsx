@@ -14,11 +14,11 @@ export const About = (): ReactElement => {
       <p className={Styles.desc}>
         このサイトは
         <br />
-        <a href="profile">Profile</a>で自己紹介を
+        <a href="/profile">Profile</a>で自己紹介を
         <br />
-        <a href="works">Works</a>で制作物を
+        <a href="/works">Works</a>で制作物を
         <br />
-        <a href="skills">Skills</a>で現在扱える技術を
+        <a href="/skills">Skills</a>で現在扱える技術を
         <br />
         まとめたポートフォリオサイトです。
       </p>
